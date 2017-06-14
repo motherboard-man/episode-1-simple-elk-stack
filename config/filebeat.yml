@@ -1,0 +1,14 @@
+path.home: config
+
+filebeat.prospectors:
+
+- input_type: log
+
+  paths:
+    - ../application.log
+
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["localhost:9200"]
+
+logging.level: debug
