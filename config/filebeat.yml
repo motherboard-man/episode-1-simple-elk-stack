@@ -4,8 +4,10 @@ filebeat.prospectors:
 
 - input_type: log
 
+  #json.keys_under_root: true
+
   paths:
-    - ../application.log
+    - application.log
 
 output.elasticsearch:
   # Array of hosts to connect to.
